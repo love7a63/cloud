@@ -8,10 +8,65 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/love7a63/springcloud-config.git #GitHub上面的git仓库名字
+          uri: git@github.com:love7a63/springcloud-config.git #GitHub上面的git仓库名字
+          username: 2270897140@qq.com
+          password: wangwei@7758
           ####搜索目录
           search-paths:
             - springcloud-config
+          strict-host-key-checking: false
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
       ####读取分支
       label: master
 
