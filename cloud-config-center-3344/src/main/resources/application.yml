@@ -8,12 +8,12 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:love7a63/springcloud-config.git #GitHub上面的git仓库名字
+          uri: git@github.com:love7a63/cloudalibaba-config.git #GitHub上面的git仓库名字
           username: 2270897140@qq.com
           password: wangwei@7758
           ####搜索目录
           search-paths:
-            - springcloud-config
+            - cloudalibaba-config
           strict-host-key-checking: false
           private-key: |
             -----BEGIN RSA PRIVATE KEY-----

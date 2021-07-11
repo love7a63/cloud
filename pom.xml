@@ -16,19 +16,22 @@
     <module>cloud-provider-payment8002</module>
     <module>cloud-providerzk-payment8004</module>
     <module>cloud-consumerzk-order80</module>
-      <module>cloud-providerconsul-payment8006</module>
-      <module>cloud-consumerconsul-order80</module>
-      <module>cloud-consumer-feign-order80</module>
-      <module>cloud-provider-hygtrix-payment8001</module>
-      <module>cloud-consumer-feign-hystrix-order80</module>
-      <module>cloud-consumer-hystrix-dashboard9001</module>
-      <module>cloud-gateway-gateway9527</module>
-      <module>cloud-config-center-3344</module>
-      <module>cloud-config-client-3355</module>
-      <module>cloud-config-client-3366</module>
-      <module>cloud-stream-rabbitmq-provider8801</module>
+    <module>cloud-providerconsul-payment8006</module>
+    <module>cloud-consumerconsul-order80</module>
+    <module>cloud-consumer-feign-order80</module>
+    <module>cloud-provider-hygtrix-payment8001</module>
+    <module>cloud-consumer-feign-hystrix-order80</module>
+    <module>cloud-consumer-hystrix-dashboard9001</module>
+    <module>cloud-gateway-gateway9527</module>
+    <module>cloud-config-center-3344</module>
+    <module>cloud-config-client-3355</module>
+    <module>cloud-config-client-3366</module>
+    <module>cloud-stream-rabbitmq-provider8801</module>
     <module>cloud-stream-rabbitmq-consumer8802</module>
     <module>cloud-stream-rabbitmq-consumer8803</module>
+    <module>cloudalibaba-provider-payment9001</module>
+    <module>cloudalibaba-provider-payment9002</module>
+    <module>cloudalibaba-consumer-nacos-order83</module>
   </modules>
   <packaging>pom</packaging><!-- 这里添加，注意不是jar或war -->
 
@@ -49,6 +52,14 @@
       锁定版本+子modlue不用写groupId和version -->
   <dependencyManagement>
     <dependencies>
+      <!--spring cloud alibaba 2.1.0.RELEASE-->
+      <dependency>
+        <groupId>com.alibaba.cloud</groupId>
+        <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+        <version>2.1.0.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <!--spring boot 2.2.2-->
       <dependency>
         <groupId>org.springframework.boot</groupId>
