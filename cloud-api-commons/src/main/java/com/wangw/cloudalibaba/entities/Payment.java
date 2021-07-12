@@ -12,5 +12,5 @@ import java.io.Serializable;
 public class Payment implements Serializable {
 
     private Long id;
-    private Long serial;
+    private String serial;
 }
